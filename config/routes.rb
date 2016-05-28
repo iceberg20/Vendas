@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'front#main'
+
   get 'front/main'
 
   get 'front/aux'

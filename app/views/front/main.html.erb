@@ -1,2 +1,11 @@
-<h1>Front#main</h1>
-<p>Find me in app/views/front/main.html.erb</p>
+<h1>Cadastre sua Vendas!</h1>
+
+<h3> Escolha o Cliente </h3>
+
+<select>
+<% @clients.each do |client| %>
+	  <option value="volvo"><%= client.name %></option>
+<% end %>
+</select>
+<h3> Ou cadastre um novo cliente</h3>
+<%=link_to "Clientes", clients_path %>
