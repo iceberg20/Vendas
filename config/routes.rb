@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'front/main'
+
+  get 'front/aux'
+
   resources :purchases
   resources :clients
   # The priority is based upon order of creation: first created -> highest priority.
